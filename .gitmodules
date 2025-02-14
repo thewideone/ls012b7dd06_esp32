@@ -1,0 +1,3 @@
+[submodule "main/rlcd_lib"]
+	path = main/rlcd_lib
+	url = https://github.com/thewideone/ls012b7dd06_lib
