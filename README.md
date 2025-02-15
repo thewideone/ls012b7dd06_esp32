@@ -8,9 +8,11 @@ In order for this code to work, additional external hardware is needed between t
 - 2 D flip-flops (e.g. 74HC74)
 - 2 switching diodes
 - 3-4 pull-up and pull-down resistors
+
 The external hardware shown on schematic_external_hardware.pdf is used to block constant bit clock wave (BCK) between rising edges of GEN and BSP, that is force BCK low during this period.
 
 Regarding the following logic values, the author is not sure whether they are correct.
+
 ST1 and ST2 labels, standing for state of the flip-flop #1 and state of the flip-flop #2, on the schematic can be connected to ESP32 digital input pins to detect initial states of the flip-flops. The flip-flops must be preloaded with the following values before initializing the display:
 - ST1 must be initially low
 - ST2 must be initially high
